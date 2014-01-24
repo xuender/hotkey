@@ -1,0 +1,17 @@
+{
+    "name": "ng-hotkey",
+    "version": "1.0.1",
+    "description": "Provide hotkey functionality in AngularJS",
+    "keywords": [
+        "angular",
+        "hotkey"
+    ],
+    "ignore": [
+        "dist",
+        "Gruntfile.coffee"
+    ],
+    "dependencies": {
+        "angular": "~1.2.9",
+        "angular-mocks": "~1.2.9"
+    }
+}

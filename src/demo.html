@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>hotkey</title>
+    <script src="angular.min.js"></script>
+    <script src="hotkey.js"></script>
+  </head>
+  <body ng-app="app" ng-controller="DemoCtrl">
+    <input type="text" hotkey="ctrl+I"></input>
+    <textarea hotkey="ctrl+shift+v"></textarea>
+    <button hotkey="CTRL+M Meta+M" ng-click="run()">run</button>
+    <script>
+      var app = angular.module('app', ['hotkey']);
+      var DemoCtrl = function($scope){
+        $scope.run= function(){
+          alert('run');
+        }
+      }
+      DemoCtrl.$inject = ['$scope']
+    </script>
+  </body>
+</html>
