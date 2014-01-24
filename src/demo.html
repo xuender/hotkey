@@ -7,10 +7,22 @@
     <script src="hotkey.js"></script>
   </head>
   <body ng-app="app" ng-controller="DemoCtrl">
-    <input type="text" hotkey="ctrl+I"></input>
-    <input type="text" hotkey="F2"></input>
-    <textarea hotkey="ctrl+shift+v"></textarea>
-    <button hotkey="CTRL+M Meta+M" ng-click="run()">run</button>
+    <p>
+      <input type="text" hotkey="ctrl+I"></input>
+      press Ctrl+I
+    </p>
+    <p>
+      <input type="text" hotkey="F2"></input>
+      press F2
+    </p>
+    <p>
+      <textarea hotkey="ctrl+shift+v"></textarea>
+      press Ctrl+Shift+V
+    </p>
+    <p>
+      <button hotkey="CTRL+M Meta+M" ng-click="run()">Ctrl+M or Meta+M</button>
+      press Ctrl+M or Command+M
+    </p>
     <script>
       var app = angular.module('app', ['hotkey']);
       var DemoCtrl = function($scope){
