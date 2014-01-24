@@ -4,7 +4,7 @@ Copyright (C) 2014 ender xu <xuender@gmail.com>
 
 Distributed under terms of the MIT license.
 ###
-KEY_NAME = ['ctrlKey', 'altKey', 'metaKey', 'shiftKey']
+_KEY_NAME = ['ctrlKey', 'altKey', 'metaKey', 'shiftKey']
 class KeyHandler
   this.keys = []
   this.bind = (key, callback)->
@@ -13,7 +13,7 @@ class KeyHandler
         for k in KeyHandler.keys
           if k.keyCode == e.keyCode
             b = true
-            for n in KEY_NAME
+            for n in _KEY_NAME
               if k[n] != e[n]
                 b = false
             if b
@@ -22,8 +22,12 @@ class KeyHandler
     for k in key.split(' ')
       this.keys.push(new KeyHandler(k, callback))
   constructor: (@key, @callback) ->
-    ks = key.toUpperCase().split('+')
-    @keyCode = ks.pop().charCodeAt(0)
+    ks = @key.toUpperCase().split('+')
+    c = ks.pop()
+    if c.length == 1
+      @keyCode = c.charCodeAt(0)
+    if c.length == 2 # F1 = 112 = 49+63
+      @keyCode = c.charCodeAt(1) + 63
     @ctrlKey = false
     @altKey = false
     @metaKey = false
