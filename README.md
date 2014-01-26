@@ -4,19 +4,23 @@ hotkey
 Provide hotkey functionality in AngularJS
 
 ## Getting Started
+
+1. User Bower install hotkey.
+  ```shell
+  bower install ng-hotkey
+  ```
 1. Include hotkey on your page
 
   ```html
   <script src="/path/to/hotkey.min.js"></script>
   ```
   
-2. Put nghotkey to your module dependencies
+1. Put nghotkey to your module dependencies
 
   ```javascript
   var app = angular.module('app', ['hotkey']);
   ```
-  
-3. Set hotkey for elements or directives using hotkey directive as an attribute
+1. Set hotkey for elements or directives using hotkey directive as an attribute
 
   ```html
    <input type="text" hotkey="ctrl+I"></input>
@@ -25,5 +29,4 @@ Provide hotkey functionality in AngularJS
     <button hotkey="CTRL+M Meta+M" ng-click="run()">run</button>
   ```
 ## Note
-
-If there is no ng-click attribute then focus, else execution ng-click.
+If have ng-click attribute then execution ng-click else focus.
