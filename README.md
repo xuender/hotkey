@@ -1,4 +1,4 @@
-hotkey
+ng-hotkey
 ======
 
 Provide hotkey functionality in AngularJS
@@ -6,7 +6,7 @@ Provide hotkey functionality in AngularJS
 ## Getting Started
 
 1. User Bower install hotkey.
-  ```shell
+  ```
   bower install ng-hotkey
   ```
 1. Include hotkey on your page
@@ -14,7 +14,6 @@ Provide hotkey functionality in AngularJS
   ```html
   <script src="/path/to/hotkey.min.js"></script>
   ```
-  
 1. Put nghotkey to your module dependencies
 
   ```javascript
@@ -28,5 +27,7 @@ Provide hotkey functionality in AngularJS
     <textarea hotkey="ctrl+shift+v"></textarea>
     <button hotkey="CTRL+M Meta+M" ng-click="run()">run</button>
   ```
+
 ## Note
+
 If have ng-click attribute then execution ng-click else focus.
