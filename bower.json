@@ -1,25 +1,25 @@
 {
-  "name": "ng-hotkey",
-  "version": "1.0.2",
-  "description": "Provide hotkey functionality in AngularJS",
-  "keywords": [
-    "angular",
-    "hotkey"
-  ],
-  "main": "hotkey.min.js",
-  "license": "MIT",
-  "readmeFilename": "README.md",
-  "_id": "ng-hotkey@1.0",
-  "ignore": [
-    "dist",
-    "Gruntfile.coffee"
-  ],
-  "devDependencies": {
-    "angular": "~1.2.9",
-    "angular-mocks": "~1.2.9"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/xuender/hotkey.git"
-  }
+    "name": "ng-hotkey",
+    "version": "1.0.3",
+    "description": "Provide hotkey functionality in AngularJS",
+    "keywords": [
+        "angular",
+        "hotkey"
+    ],
+    "main": "hotkey.min.js",
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "_id": "ng-hotkey@1.0",
+    "ignore": [
+        "dist",
+        "Gruntfile.coffee"
+    ],
+    "devDependencies": {
+        "angular": "~1.2.9",
+        "angular-mocks": "~1.2.9"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/xuender/hotkey.git"
+    }
 }

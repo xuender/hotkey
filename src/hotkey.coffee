@@ -25,4 +25,15 @@ angular.module('hotkey', [])
             iElement[0].focus()
           )
     }
-  ])
+  ]).directive('enter', ->
+    ($scope, elm, attr)->
+      elm.bind('keydown', (e)->
+        if e.keyCode == 13
+          if attr.enter
+            $scope.$apply(attr.enter)
+          else
+            e.preventDefault()
+            nxtIdx = $('input').index(this) + 1
+            $("input:eq(" + nxtIdx + ")").focus()
+      )
+  )

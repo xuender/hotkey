@@ -23,11 +23,18 @@
       <button hotkey="CTRL+M Meta+M" ng-click="run()">Ctrl+M or Meta+M</button>
       press Ctrl+M or Command+M
     </p>
+    <p>
+      <input type="text" enter="show()" ng-model="data"></input>
+      input text and press Enter
+    </p>
     <script>
       var app = angular.module('app', ['hotkey']);
       var DemoCtrl = function($scope){
-        $scope.run= function(){
+        $scope.run = function(){
           alert('run');
+        }
+        $scope.show = function(){
+          alert($scope.data);
         }
       }
       DemoCtrl.$inject = ['$scope']
