@@ -26,7 +26,7 @@ Provide hotkey functionality in AngularJS
     <input type="text" hotkey="F2"></input>
     <textarea hotkey="ctrl+shift+v"></textarea>
     <button hotkey="CTRL+M Meta+M" ng-click="run()">run</button>
-    <input type="text" enter="func()"></input>
+    <input type="text" enter="func()" focus></input>
   ```
 
 ## Note

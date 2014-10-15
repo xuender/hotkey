@@ -36,4 +36,7 @@ angular.module('hotkey', [])
             nxtIdx = $('input,select,button').index(this) + 1
             $('input,select,button').eq(nxtIdx).focus()
       )
+  ).directive('focus', ->
+    ($scope, elm)->
+      elm[0].focus()
   )
