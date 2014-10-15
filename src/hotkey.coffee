@@ -33,7 +33,7 @@ angular.module('hotkey', [])
             $scope.$apply(attr.enter)
           else
             e.preventDefault()
-            nxtIdx = $('input,select').index(this) + 1
-            $('input,select').eq(nxtIdx).focus()
+            nxtIdx = $('input,select,button').index(this) + 1
+            $('input,select,button').eq(nxtIdx).focus()
       )
   )
