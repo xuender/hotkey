@@ -22,10 +22,11 @@ Provide hotkey functionality in AngularJS
 1. Set hotkey for elements or directives using hotkey directive as an attribute
 
   ```html
-   <input type="text" hotkey="ctrl+I"></input>
+    <input type="text" hotkey="ctrl+I"></input>
     <input type="text" hotkey="F2"></input>
     <textarea hotkey="ctrl+shift+v"></textarea>
     <button hotkey="CTRL+M Meta+M" ng-click="run()">run</button>
+    <input type="text" enter="func()"></input>
   ```
 
 ## Note
